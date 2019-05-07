@@ -8,8 +8,7 @@ Planned extensions:
 1. Migrate db to Postgres from sqlite
 2. Deploy to Heroku
 3. Redesign UI
-  a. page_detail have comment section
-    i. add share buttons(twitter, etc)
-  b. add Home/Archive/About pages
-  c. allo user signup
-4. Images in posts?
+  i. add share buttons(twitter, etc) to posts
+4. Remove signup/login button, only allow one account(mine) and give all guests read access/write to comments
+  i. keep login url active for me to login
+4. Images in posts

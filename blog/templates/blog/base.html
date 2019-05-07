@@ -10,22 +10,21 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Garrett's Blog</a>
+                <a class="navbar-brand" href="{% url 'index' %}">Garrett's Blog</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Archive</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'post_list' %}">Archive</a></li>
                 <li><a href="#">About</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
                 {% if user.is_authenticated %}
-                <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
-                <li><a href="{% url 'post_new' %}"><span class="glyphicon glyphicon-plus"></span>New Post</a></li>
-                <li><a href="{% url 'post_draft_list' %}"><span class="glyphicon glyphicon-edit"></span>Drafts</a></li>
+                <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                <li><a href="{% url 'post_new' %}"><span class="glyphicon glyphicon-plus"></span> New Post</a></li>
+                <li><a href="{% url 'post_draft_list' %}"><span class="glyphicon glyphicon-edit"></span> Drafts</a></li>
                 {% else %}
-                    <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                 {% endif %}
             </ul>
         </div>
