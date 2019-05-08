@@ -1,8 +1,13 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="jumbotron">
-        <h1>Bootstrap Tutorial</h1> 
-        <p>Bootstrap is the most popular HTML, CSS...</p> 
-    </div>
+    <h1 class="cover-heading">Welcome.</h1>
+    <p class="lead">Welcome to my website. This website was built using <a href="https://www.djangoproject.com/" class="text-primary">Django</a> and <a href="https://getbootstrap.com/" class="text-primary">Bootstrap</a>. Click the button below to visit the archive of blog posts.</p>
+    <p class="lead">
+      <a href="{% url 'post_list' %}" class="btn btn-lg btn-secondary">Check out the archive</a>
+    </p>
+    <p class="lead">
+        <a href="https://github.com/GGreenfield" class="fa fa-github social"></a>
+        <a href="https://linkedin.com/" class="fa fa-linkedin social"></a>
+    </p>
 {% endblock content %}
