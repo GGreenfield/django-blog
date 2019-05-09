@@ -9,6 +9,9 @@ Planned extensions:
 2. Deploy to Heroku
 3. Redesign UI
   i. add share buttons(twitter, etc) to posts
-4. Remove signup/login button, only allow one account(mine) and give all guests read access/write to comments
-  i. keep login url active for me to login
 4. Images in posts
+5. Add pagination to blog archive
+6. Add searchability
+7. add API to get posts/comments
+8. redesign post detail page
+

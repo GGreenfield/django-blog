@@ -1,0 +1,9 @@
+<header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand"><a href="{% url 'index' %}">Garrett Greenfield</a></h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link {{ index }}" href="{% url 'index' %}">Home</a>
+            <a class="nav-link {{ post_list }}" href="{% url 'post_list' %}">Archive</a>
+          </nav>
+        </div>
+</header>

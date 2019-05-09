@@ -32,15 +32,7 @@
   </head>
   <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Garrett Greenfield</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link" href="{% url 'index' %}">Home</a>
-        <a class="nav-link" href="{% url 'post_list' %}">Archive</a>
-      </nav>
-    </div>
-  </header>
+    {% include 'blog/navbar.html' %}
 
   <main role="main" class="inner cover">
     {% block content %}
