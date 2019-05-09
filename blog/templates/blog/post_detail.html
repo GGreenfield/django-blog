@@ -28,24 +28,12 @@
             <hr>
     
             <!-- Comments Form -->
-            <div class="card my-4">
-              <h5 class="card-header">Leave a Comment:</h5>
-              <div class="card-body">
-                <form method="POST"> {% csrf_token %}
-                        {{ form.as_p }}
-                  <div class="form-group">
-                    <textarea class="form-control" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary" a href="{% url 'add_comment_to_post' pk=post.pk %}">Submit</button>
-                </form>
-              </div>
-            </div>
+            <a class="btn btn-primary" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
             {% for comment in post.comments.all %}
             <!-- Single Comment -->
             <div class="media mb-4">
-              <p><span class="glyphicon glyphicon-user"></span></p> 
               <div class="media-body">
-                <h5 class="mt-0">Anonymous</h5>
+                <p><span class="glyphicon glyphicon-user"></span> Anonymous</p> 
                 {{ comment.text|linebreaks }}
               </div>
             </div>

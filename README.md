@@ -1,4 +1,4 @@
-A follow-through(with planned extensions) of https://tutorial.djangogirls.org/en and https://tutorial-extensions.djangogirls.org/en/homework/
+A loose follow-through(with planned extensions) of https://tutorial.djangogirls.org/en and https://tutorial-extensions.djangogirls.org/en/homework/
 
 Hosted with pythonanywhere at garrgree.pythonanywhere.com
 
